@@ -1,0 +1,162 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/bgGbk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sizejdl2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/sizejdl2"
+            android:layout_height="@dimen/sizejdl2"
+            android:src="@drawable/tittle"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:layout_width="@dimen/btnmini"
+            android:layout_height="@dimen/btnmini"
+            android:src="@drawable/close"
+            android:id="@+id/exitButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/marginbtn"
+            android:layout_marginRight="@dimen/marginbtn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/btnlayout"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/playerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/namapemain1"
+                android:textSize="@dimen/namapemain" />
+
+            <ImageView
+                android:id="@+id/gunting1"
+                android:onClick="pilPlayerOne"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="gunting"
+                android:src="@drawable/gunting" />
+
+            <ImageView
+                android:id="@+id/batu1"
+                android:onClick="pilPlayerOne"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="batu"
+                android:src="@drawable/batu" />
+
+            <ImageView
+                android:id="@+id/kertas1"
+                android:onClick="pilPlayerOne"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="kertas"
+                android:src="@drawable/kertas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/tlstengah"
+            android:layout_height="@dimen/untktulis"
+            android:layout_gravity="center"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tlstengah"
+                android:layout_width="@dimen/tlstengah"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vs" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cpuName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/namapemain2"
+                android:textSize="@dimen/namapemain" />
+
+            <ImageView
+                android:onClick="pilPlayerTwo"
+                android:id="@+id/gunting2"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="gunting"
+                android:src="@drawable/gunting" />
+
+            <ImageView
+                android:id="@+id/batu2"
+                android:onClick="pilPlayerTwo"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="batu"
+                android:src="@drawable/batu" />
+
+            <ImageView
+                android:id="@+id/kertas2"
+                android:onClick="pilPlayerTwo"
+                android:layout_width="@dimen/btnpil"
+                android:layout_height="@dimen/btnpil"
+                android:contentDescription="kertas"
+                android:src="@drawable/kertas" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/btnmini"
+            android:layout_height="@dimen/btnmini"
+            android:id="@+id/refresh"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refresh"
+            android:onClick="resetbtn"
+            android:layout_marginRight="@dimen/marginbtn"/>
+
+        <ImageView
+            android:layout_width="@dimen/btnmini"
+            android:layout_height="@dimen/btnmini"
+            android:id="@+id/homeBtn"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/home"
+            android:onClick="homebtn"
+            android:layout_marginLeft="@dimen/marginbtn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

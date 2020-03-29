@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnpil">100dp</dimen>
+    <dimen name="sizevs">36sp</dimen>
+    <dimen name="btnlayout">400dp</dimen>
+    <dimen name="layreset">100dp</dimen>
+    <dimen name="sizejdl">200sp</dimen>
+    <dimen name="tlstengah">120dp</dimen>
+    <dimen name="untktulis">50dp</dimen>
+    <dimen name="sizejdl2">150dp</dimen>
+    <dimen name="namapemain">28sp</dimen>
+    <dimen name="btnpilres">80dp</dimen>
+    <dimen name="marginbtn">20dp</dimen>
+    <dimen name="tlsPilih">18sp</dimen>
+    <dimen name="btnmini">50dp</dimen>
+</resources>

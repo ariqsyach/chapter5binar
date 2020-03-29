@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">chap5p2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vs">Versus</string>
+    <string name="namapemain1">Pemain 1</string>
+    <string name="namapemain2">CPU</string>
+</resources>
