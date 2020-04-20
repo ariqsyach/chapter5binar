@@ -1,63 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PilihActivity">
+    tools:context=".PilihActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_alignParentTop="true">
 
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PILIH LAWANMU"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_account_box_black_24dp"
+        android:id="@+id/btn_profile"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
     <ImageView
         android:id="@+id/pilPlyr"
         android:layout_width="wrap_content"
-        android:layout_height="208dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtVsPlyr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/pilCom"
-        android:layout_width="wrap_content"
-        android:layout_height="208dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="93dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtVsComp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVsPlyr" />
-
+        android:layout_height="180dp"
+        android:layout_margin="20dp" />
     <TextView
         android:id="@+id/txtVsPlyr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="127dp"
-        android:layout_marginLeft="127dp"
-        android:layout_marginTop="263dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginRight="128dp"
         android:text="Bermain Melawan Player"
-        app:layout_constraintBottom_toTopOf="@+id/txtVsComp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:textSize="@dimen/tlsPilih"/>
+
+
+    <ImageView
+        android:id="@+id/pilCom"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        />
+
 
     <TextView
         android:id="@+id/txtVsComp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="237dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="133dp"
         android:text="Bermain Melawan Computer"
         android:textSize="@dimen/tlsPilih"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVsPlyr" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

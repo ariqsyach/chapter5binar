@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_pilih.*
 import kotlinx.android.synthetic.main.fragment_third.*
+import kotlin.math.log
 
 class PilihActivity : AppCompatActivity() {
 
@@ -18,8 +19,11 @@ class PilihActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pilih)
+        val sp = getSharedPreferences("coba", Context.MODE_PRIVATE)
+        val esp = sp.edit()
 
-        val name = intent.getStringExtra("name")
+        val name = sp.getString("name", "")
+        esp.commit()
         txtVsPlyr.text = "${name} Bermain Melawan Player"
         txtVsComp.text = "${name} Bermain Melawan Computer"
 
@@ -49,6 +53,11 @@ class PilihActivity : AppCompatActivity() {
             intent.putExtra("name", ubahNama)
             startActivity(intent)
             Log.d("Pilih", "VS Player")
+        }
+        btn_profile.setOnClickListener{
+            val intent = Intent(this@PilihActivity, DataProfileActivity::class.java)
+            startActivity(intent)
+            Log.d("Start","DataProfileAct")
         }
     }
 }

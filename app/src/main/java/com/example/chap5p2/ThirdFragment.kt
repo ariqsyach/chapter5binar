@@ -53,17 +53,9 @@ class ThirdFragment : Fragment() {
         Log.d("Start", "ThirdFragment")
 
         btn_next.setOnClickListener {
-            val intent = Intent(this@ThirdFragment.context, PilihActivity::class.java)
-            val value = inputNama.text.toString()
-            Log.d("Input", "Nama Pemain")
-            if (inputNama.length() > 0) {
-                intent.putExtra("name", value)
-                startActivity(intent)
+            val intent = Intent(this@ThirdFragment.context, RegisterActivity::class.java)
+            startActivity(intent)
 
-            } else {
-                Toast.makeText(this.context, "Silahkan Masukkan Nama", Toast.LENGTH_LONG).show()
-                Log.d("Input", "Masih Kosong")
-            }
         }
     }
 }

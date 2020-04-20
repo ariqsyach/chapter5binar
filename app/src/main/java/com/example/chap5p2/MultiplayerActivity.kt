@@ -59,7 +59,8 @@ class MultiplayerActivity : AppCompatActivity(), CallBack {
             Log.d("Start", "MultiplayerActivity")
         }
         exitButton.setOnClickListener{
-            finishAffinity()
+            val intent = Intent(this@MultiplayerActivity, ExitActivity::class.java)
+            startActivity(intent)
             Log.d("Exit", "Exit")
         }
     }

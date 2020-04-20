@@ -23,7 +23,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MultiplayerActivity"></activity>
+        <activity android:name=".ExitActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DataProfileActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MultiplayerActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">

@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity(), CallBack {
             Log.d("Kembali", "PilihActivity")
         }
         exitButton.setOnClickListener{
-            finishAffinity()
+            val intent = Intent(this@MainActivity, ExitActivity::class.java)
+            startActivity(intent)
             Log.d("Exit", "Exit")
         }
     }
