@@ -25,25 +25,6 @@ class LandingPageActivity : AppCompatActivity() {
         val adapterView = AdapterViewPager(supportFragmentManager)
         view_pager.adapter = adapterView
         dots_indicator.setViewPager(view_pager)
-//        if (savedInstanceState!=null){
-//            val name = savedInstanceState.getString("name") as String
-//            tv_name.text = name
-//        }
-      //  btn_next.setOnClickListener {
-          //  val value = editText.text.toString()
-       //     val intent = Intent(this, MainActivity::class.java)
-          //  intent.putExtra("name", value)
-       //     startActivity(intent)
-    //    }
-//        btnsave.setOnClickListener {
-//            name = "Ariq Syach"
-//            tv_name.text = name
-//        }
-//    }
-//
-//    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-//        outState.putString("name","Ariq Syach")
   }
 
     override fun onStart() {

@@ -14,7 +14,7 @@ class ExitActivity : AppCompatActivity() {
         setContentView(R.layout.activity_exit)
 
         tv_mulai.setOnClickListener{
-            val intent = Intent(this@ExitActivity, SplashActivity::class.java)
+            val intent = Intent(this@ExitActivity, PilihActivity::class.java)
             startActivity(intent)
             Log.d("Exit", "Mulai")
         }
